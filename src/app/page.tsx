@@ -6,8 +6,8 @@ export default function Home() {
     r === "高" ? "text-red-400" : r === "中" ? "text-yellow-300" : "text-green-400";
 
   return (
-    <main className="min-h-screen bg-[#0A0F1A] text-[#E5E7EB] p-8">
-      <div className="max-w-6xl mx-auto">
+    <main className="min-h-screen bg-[#0A0F1A] text-[#E5E7EB] p-6 md:p-8">
+      <div className="max-w-7xl mx-auto">
         <header className="mb-8 border-b border-[#1F2A44] pb-5">
           <h1 className="text-2xl tracking-[0.22em]">
             空投指数 <span className="ml-3 text-sm text-[#9CA3AF]">终端版</span>
