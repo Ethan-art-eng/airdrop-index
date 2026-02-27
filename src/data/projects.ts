@@ -21,7 +21,7 @@ export const projects: Project[] = [
     stage: "积分阶段",
     risk: "中",
     cost: "低",
-    score: 99999,
+    score: 98,
     url: "https://example.com",
 
     status: "进行中",
