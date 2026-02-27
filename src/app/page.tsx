@@ -16,10 +16,9 @@ export default function Home() {
             精选空投资讯，过滤噪音，只保留有效信号。
           </p>
         </header>
-
         <section className="border border-[#1F2A44] bg-[#0F172A]">
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border-collapse">
+          <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-[#1F2A44]">
+            <table className="min-w-[900px] text-sm border-collapse">
               <thead className="text-[#9CA3AF] border-b border-[#1F2A44]">
                 <tr>
                   <th className="text-left py-3 pl-4">项目名称</th>
@@ -34,7 +33,6 @@ export default function Home() {
                   <th className="text-left pr-4">访问链接</th>
                 </tr>
               </thead>
-
               <tbody>
                 {projects.map((p) => (
                   <tr key={p.name} className="border-b border-[#0A0F1A] hover:bg-[#111C33]">
