@@ -273,7 +273,7 @@ export function AirdropTable() {
                 <th className="py-3 px-4 text-left font-medium text-[12px] tracking-[0.02em] text-[#9CA3AF]">
                   成本
                 </th>
-                <th className="py-3 px-4 text-left font-medium text-[12px] tracking-[0.02em] text-[#9CA3AF]">
+                <th className="py-3 px-4 whitespace-nowrap text-left font-medium text-[12px] tracking-[0.02em] text-[#9CA3AF]">
                   建议上号
                 </th>
 
@@ -296,8 +296,8 @@ export function AirdropTable() {
                 <th className="py-3 px-4 text-left font-medium text-[12px] tracking-[0.02em] text-[#9CA3AF]">
                   利润
                 </th>
-                <th className="py-3 px-4 text-left font-medium text-[12px] tracking-[0.02em] text-[#9CA3AF]">
-                  任务链接
+               <th className="py-3 px-4 whitespace-nowrap text-left font-medium text-[12px] tracking-[0.02em] text-[#9CA3AF]">
+                 任务链接
                 </th>
 
                 {/* 备注：允许换行，居中 */}
