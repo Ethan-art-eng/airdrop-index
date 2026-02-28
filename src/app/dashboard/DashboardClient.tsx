@@ -76,7 +76,7 @@ export default function DashboardClient() {
             <header className="mb-6 border-b border-[#1F2A44] pb-5">
               <h1 className="text-2xl tracking-[0.12em]">{title}</h1>
               <p className="mt-2 text-sm text-[#9CA3AF]">
-                右侧内容切换由本地状态控制，不刷新页面。
+                聚会优质空投项目信息。
               </p>
             </header>
 
