@@ -160,13 +160,6 @@ export function AirdropTable() {
   return (
     <div className="w-full">
       {/* 只保留一个标题 */}
-      <div className="mb-6">
-        <h1 className="text-3xl tracking-[0.12em] text-[#E5E7EB]">空投项目</h1>
-        <p className="mt-2 text-sm text-[#9CA3AF]">
-          聚合优质空投信息，筛掉噪音，只保留可执行的任务线索。
-        </p>
-      </div>
-
       {/* 卡片：右边不留白的关键是外层容器本身要 w-full 且不固定 min-width */}
       <section className="w-full rounded-2xl border border-[#1F2A44] bg-[#0B1220] shadow-[0_0_40px_rgba(255,184,0,0.06)]">
         {/* 统计栏（3个：总项目/进行中/已结束） */}
