@@ -66,17 +66,20 @@ export default function DashboardClient() {
               })}
             </nav>
 
-            <div className="px-6 pb-6 text-xs text-[#6B7280]">
-              Tip：未来新增页面只要改 <span className="text-[#9CA3AF]">src/config/dashboard.ts</span>
-            </div>
           </aside>
 
           {/* Main */}
           <section className="p-6 md:p-8">
+
             <header className="mb-6 border-b border-[#1F2A44] pb-5">
-              <h1 className="text-2xl tracking-[0.12em]">{title}</h1>
+              <div className="flex items-baseline gap-3">
+                <h1 className="text-2xl tracking-[0.12em] text-[#E5E7EB]">{title}</h1>
+                <span className="text-[11px] tracking-[0.28em] text-amber-300/80">
+                  AIRDROP INDEX
+                </span>
+              </div>
               <p className="mt-2 text-sm text-[#9CA3AF]">
-                聚会优质空投项目信息。
+                聚合优质空投信息，筛掉噪音，只保留可执行的任务线索。
               </p>
             </header>
 

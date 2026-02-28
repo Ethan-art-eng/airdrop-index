@@ -199,13 +199,6 @@ export function AirdropTable() {
 
   return (
     <div className="w-full">
-      {/* 只保留一个标题 */}
-      <div className="mb-6">
-        <h1 className="text-3xl tracking-[0.10em] text-[#E5E7EB]">空投项目</h1>
-        <p className="mt-2 text-sm text-[#9CA3AF]">
-          聚合优质空投信息，筛掉噪音，只保留可执行的任务线索。
-        </p>
-      </div>
 
       <section className="w-full rounded-2xl border border-[#1F2A44] bg-[#0B1220] shadow-[0_0_40px_rgba(245,200,106,0.10)]">
         {/* 顶部栏：左边统计 / 右边说明 */}
