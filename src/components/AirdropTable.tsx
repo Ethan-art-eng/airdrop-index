@@ -1,56 +1,56 @@
 import { projects } from "@/data/projects";
-
 export function AirdropTable() {
-  const riskColor = (r: string) =>
-    r === "高" ? "text-red-400" : r === "中" ? "text-yellow-300" : "text-green-400";
-
-  const statusColor = (s: string) =>
-    s === "进行中" ? "text-green-400" : s === "传闻" ? "text-yellow-300" : "text-gray-400";
-
   return (
-    <section className="border border-[#1F2A44] bg-[#0F172A]">
+    <section className="rounded-2xl border border-[#1F2A44] bg-[#0F172A] shadow-lg">
       <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-[#1F2A44]">
         <table className="w-full text-sm border-collapse">
-          <thead className="text-[#9CA3AF] border-b border-[#1F2A44]">
-            <tr>
-              <th className="text-left py-3 pl-4">项目名称</th>
-              <th className="text-left">公链</th>
-              <th className="text-left">阶段</th>
-              <th className="text-left">风险等级</th>
-              <th className="text-left">参与成本</th>
-              <th className="text-left">综合评分</th>
-              <th className="text-left">状态</th>
-              <th className="text-left">更新</th>
-              <th className="text-left">标签</th>
-              <th className="text-left pr-4">访问链接</th>
-            </tr>
-          </thead>
+          
+            <thead className="sticky top-0 bg-[#0F172A] z-10">
+              <tr>
+                <th className="py-4 pl-6 text-left">名称</th>
+                <th className="text-left">类别</th>
+                <th className="text-left">融资</th>
+                <th className="text-left">投资机构</th>
+                <th className="text-left">成本</th>
+                <th className="text-left">建议上号</th>
+                <th className="text-left">状态</th>
+                <th className="text-left">更新</th>
+                <th className="text-left">利润</th>
+                <th className="text-left">任务链接</th>
+                <th className="text-left pr-6">备注</th>
+              </tr>
+            </thead>
 
-          <tbody>
+          <tbody> 
             {projects.map((p) => (
-              <tr key={p.name} className="border-b border-[#0A0F1A] hover:bg-[#111C33]">
-                <td className="py-4 pl-4 font-medium">{p.name}</td>
-                <td>{p.chain}</td>
-                <td>{p.stage}</td>
-                <td className={riskColor(p.risk)}>{p.risk}</td>
-                <td>{p.cost}</td>
-                <td className="text-[#F59E0B] font-semibold">{p.score}</td>
-                <td className={statusColor(p.status)}>{p.status}</td>
+              <tr
+                key={p.name}
+                className="border-b border-[#111827] hover:bg-[#1A2332] transition-colors duration-150"
+              >
+                <td className="py-4 pl-6 font-medium text-[#E6EDF3]">{p.name}</td>
+                <td className="text-[#9CA3AF]">{p.category}</td>
+                <td className="text-[#FACC15]">{p.funding}</td>
+                <td className="text-[#9CA3AF]">{p.investors}</td>
+                <td className="text-[#9CA3AF]">{p.cost}</td>
+                <td className="text-[#9CA3AF]">{p.accounts}</td>
+                <td className="text-[#22C55E]">{p.status}</td>
                 <td className="text-[#9CA3AF]">{p.updatedAt}</td>
-                <td className="text-[#9CA3AF]">{p.tags.join(" / ")}</td>
-                <td className="pr-4">
+                <td className="text-[#F59E0B] font-semibold">{p.profit}</td>
+                <td>
                   <a
                     href={p.url}
                     target="_blank"
-                    className="text-[#9CA3AF] hover:text-[#F59E0B]"
                     rel="noreferrer"
+                    className="text-[#3B82F6] hover:underline"
                   >
-                    打开 →
+                    打开
                   </a>
                 </td>
+                <td className="text-[#9CA3AF] pr-6">{p.note}</td>
               </tr>
             ))}
           </tbody>
+        
         </table>
       </div>
 

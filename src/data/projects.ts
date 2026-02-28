@@ -1,57 +1,28 @@
-export type Project = {
-  name: string;
-  chain: string;
-  stage: string; // 用 stage，不用 type
-  risk: "高" | "中" | "低";
-  cost: string;
-  score: number;
-  url: string;
-
-
-  status: "进行中" | "已结束" | "传闻";
-  updatedAt: string; // "2026-02-26"
-  tags: string[];    // ["积分", "测试网"]
-
-};
-
-export const projects: Project[] = [
+export const projects = [
   {
-    name: "LayerX",
-    chain: "ETH",
-    stage: "积分阶段",
-    risk: "中",
-    cost: "低",
-    score: 98,
-    url: "https://example.com",
-
+    name: "LayerZero",
+    category: "跨链协议",
+    funding: "$120M",
+    investors: "a16z / Sequoia",
+    cost: "$50-100",
+    accounts: "3-5个",
     status: "进行中",
-    updatedAt: "2026-02-26",
-    tags: ["积分", "交互"],
+    updatedAt: "2026-02-28",
+    profit: "高预期",
+    url: "https://layerzero.network",
+    note: "频繁交互优先级高"
   },
   {
-    name: "SolBridge",
-    chain: "SOL",
-    stage: "测试网",
-    risk: "低",
-    cost: "极低",
-    score: 65,
-    url: "https://example.com",
-
+    name: "ZetaChain",
+    category: "互操作协议",
+    funding: "$27M",
+    investors: "Coinbase Ventures",
+    cost: "$30-80",
+    accounts: "2-4个",
     status: "进行中",
-    updatedAt: "2026-02-26",
-    tags: ["测试网", "任务"],
-  },
-  {
-    name: "OmniAI",
-    chain: "ETH",
-    stage: "追溯空投",
-    risk: "高",
-    cost: "高",
-    score: 82,
-    url: "https://example.com",
-
-    status: "传闻",
     updatedAt: "2026-02-20",
-    tags: ["追溯", "资金门槛高"],
-  },
+    profit: "中等",
+    url: "https://zetachain.com",
+    note: "主网交互为核心"
+  }
 ];
